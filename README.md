@@ -12,21 +12,20 @@ Bu proje [React.js](https://reactjs.org/)'in [Typescript](https://www.typescript
 
 ## Demo
 
-Demo sayfası: [Fiyat Hesaplama Aracı](https://xxxxxx.vercel.app/)
-
+Demo sayfası: [Fiyat Hesaplama Aracı](https://fiyat-hesaplama-araci.vercel.app/)
 
 ## Repository Klonlama
 
 Repository'i kendi bilgisayarınıza klonlayın.
 
 ```bash
-git clone https://github.com/caglardur/xxxxxx.git
+git clone https://github.com/caglardur/fiyat-hesaplama-araci.git
 ```
 
 Aşağıdaki komut ile Npm paketlerini yükleyin.
 
 ```bash
-cd xxxxxx
+cd fiyat-hesaplama-araci
 npm install
 ```
 
