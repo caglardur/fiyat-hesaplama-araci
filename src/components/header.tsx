@@ -8,7 +8,7 @@ const Header: React.FC<{ setDataName: React.Dispatch<React.SetStateAction<string
           Fiyat Hesaplama Aracı
         </div>
         <div className="col-auto dropdown">
-          <div className="btn btn-secondary dropdown-toggle" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+          <div className="btn btn-light btn-sm dropdown-toggle" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
             Ürün Kategorileri
           </div>
           <ul className="dropdown-menu" aria-labelledby="dropdownMenuLink">
