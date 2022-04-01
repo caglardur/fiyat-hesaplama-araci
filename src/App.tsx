@@ -39,7 +39,7 @@ const App: React.FC = () => {
     }
   }, [dataName])
 
-  console.log(process.env.REACT_APP_NAME)
+  
 
   return (
     <div className="container-md">
