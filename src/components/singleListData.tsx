@@ -2,7 +2,7 @@ import React, { useState } from "react"
 
 import { useAppDispatch } from "../store/hook"
 
-import { addCart, removeCart } from "../store/cartReducer"
+import { addCart } from "../store/cartReducer"
 
 import { Data } from "../interfaces"
 
