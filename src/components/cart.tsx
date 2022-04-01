@@ -73,14 +73,14 @@ const Cart: React.FC = () => {
             <tr>
               <th className="col">Ürün</th>
               <th className="col-1">Fiyat($)</th>
-              <th className="col-1">Adet</th>
-              <th className="col-1">İşlem</th>
+              <th className="col-1 text-center">Adet</th>
+              <th className="col-1 text-center">İşlem</th>
             </tr>
           </thead>
           <tbody>
             {cart &&
               cart.map((single, index) => (
-                <tr key={index} className="col">
+                <tr key={index} className="col align-middle align-items-center">
                   <SingleCartData single={single} index={index} />
                 </tr>
               ))}

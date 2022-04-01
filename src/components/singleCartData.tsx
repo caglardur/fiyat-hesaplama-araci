@@ -2,7 +2,7 @@ import React from "react"
 
 import { useAppDispatch } from "../store/hook"
 
-import { removeCart } from "../store/cartReducer"
+import { removeCart, addCart } from "../store/cartReducer"
 
 import { singleCartItem } from "../interfaces"
 
@@ -18,8 +18,18 @@ const SingleCartData: React.FC<{ single: singleCartItem; index: number }> = ({ s
         </div>
       </td>
       <td className="col-1">{single.price}</td>
-      <td className="col-1">{single.total}</td>
       <td className="col-1">
+        <div className="row">
+          <div role="button" className="col p-0 text-center" onClick={() => (single.total === 1 ? dispatch(removeCart(single)) : dispatch(addCart({ ...single, total: -1 })))}>
+            <span className="material-icons">remove</span>
+          </div>
+          <div className="col p-0 text-center">{single.total}</div>
+          <div role="button" className="col p-0 text-center" onClick={() => dispatch(addCart({ ...single, total: +1 }))}>
+            <span className="material-icons">add</span>
+          </div>
+        </div>
+      </td>
+      <td className="col-1 text-center">
         <button type="button" className="btn btn-danger btn-sm" onClick={() => dispatch(removeCart(single))}>
           Sil
         </button>

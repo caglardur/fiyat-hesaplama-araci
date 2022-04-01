@@ -39,6 +39,8 @@ const App: React.FC = () => {
     }
   }, [dataName])
 
+  console.log(process.env.THIS_NAME)
+
   return (
     <div className="container-md">
       <Header setDataName={setDataName} dataName={dataName} />

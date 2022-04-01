@@ -22,14 +22,14 @@ const List: React.FC<{ data: Data[]; dataName: string; setDataName: React.Dispat
             <tr>
               <th className="col">Ürün</th>
               <th className="col-1">Fiyat($)</th>
-              <th className="col-1">Adet</th>
-              <th className="col-1">İşlem</th>
+              <th className="col-1 text-center">Adet</th>
+              <th className="col-1 text-center">İşlem</th>
             </tr>
           </thead>
           <tbody>
             {data &&
               data.map((single, index) => (
-                <tr key={index} className="col align-middle">
+                <tr key={index} className="col align-middle align-items-center">
                   <SingleListData single={single} index={index} />
                 </tr>
               ))}
