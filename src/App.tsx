@@ -39,10 +39,8 @@ const App: React.FC = () => {
     }
   }, [dataName])
 
-  
-
   return (
-    <div className="container-md">
+    <div className="container-xxl">
       <Header setDataName={setDataName} dataName={dataName} />
       {loading ? (
         <div className="col my-5">

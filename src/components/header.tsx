@@ -2,8 +2,8 @@ import React from "react"
 
 const Header: React.FC<{ setDataName: React.Dispatch<React.SetStateAction<string>>; dataName: string }> = ({ setDataName, dataName }) => {
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-light rounded">
-      <div className="container-fluid">
+    <nav className="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+      <div className="container-fluid ">
         <div role="button" className="col me-5 fs-5 fw-bold" onClick={() => setDataName("")}>
           Fiyat Hesaplama Aracı
         </div>

@@ -20,14 +20,14 @@ const SingleListData: React.FC<{ single: Data; index: number }> = ({ single, ind
       <td className="col-1">{single.price}</td>
       <td className="col-1">
         <div className="row align-items-center">
-          <div role="button" className="col p-0 text-center" onClick={() => total > 1 && setTotal(total - 1)}>
-            <span className="material-icons">remove</span>
+          <div role="button" className="col p-0 text-center d-none d-sm-block" onClick={() => total > 1 && setTotal(total - 1)}>
+            <span className="material-icons align-middle">remove</span>
           </div>
           <div className="col p-0 text-center">
             <input type="number" aria-label="Adet" className="form-control form-control-sm text-center" value={total} min={1} size={2} style={{ maxWidth: "80px" }} onChange={e => setTotal(Number(e.target.value))} />
           </div>
-          <div role="button" className="col p-0 text-center" onClick={() => setTotal(total + 1)}>
-            <span className="material-icons">add</span>
+          <div role="button" className="col p-0 text-center d-none d-sm-block" onClick={() => setTotal(total + 1)}>
+            <span className="material-icons align-middle">add</span>
           </div>
         </div>
       </td>
