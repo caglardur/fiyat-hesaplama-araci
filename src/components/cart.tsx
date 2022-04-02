@@ -73,7 +73,7 @@ const Cart: React.FC = () => {
             <tr>
               <th className="col">Ürün</th>
               <th className="col-1">Fiyat($)</th>
-              <th className="col-1 text-center">Adet</th>
+              <th className="col-2 col-xl-1 text-center">Adet</th>
               <th className="col-1 text-center">İşlem</th>
             </tr>
           </thead>
