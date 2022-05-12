@@ -10,10 +10,6 @@ Bu proje [React.js](https://reactjs.org/)'in [Typescript](https://www.typescript
 - [html2pdf.js](https://www.npmjs.com/package/html2pdf.js)
 - [ReactToPrint](https://www.npmjs.com/package/react-to-print)
 
-## Demo
-
-Demo sayfası: [Fiyat Hesaplama Aracı](https://fiyat-hesaplama-araci.vercel.app/)
-
 ## Repository Klonlama
 
 Repository'i kendi bilgisayarınıza klonlayın.
